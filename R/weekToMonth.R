@@ -20,6 +20,10 @@
 #' @return a dataframe containing two column vectors: \code{yearMonth} and
 #'   \code{value}.
 #' @author You Li
+#' @examples
+#' weeklyData = c(1:4, 2:5, 3:6, 4:7, 5:8, 6:9, 1:10)
+#' monthlyData = weekToMonth(weeklyData, year = 2008, wkIndex = 30, wkMethod = "epiMon")
+#' monthlyData = weekToMonth(weeklyData, datStart = "21-07-2008", wkMethod = "startDat")
 #' @seealso dateFromWeek
 #' @export
 weekToMonth <- function(wkdata, year = NULL, wkIndex = NULL, wkMethod = "ISO",

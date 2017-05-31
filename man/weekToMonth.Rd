@@ -36,6 +36,11 @@ This function converts weekly data to monthly data.
   The start week or date is needed along with the data. The start week can be
   defined by ISO week or epi week.
 }
+\examples{
+weeklyData = c(1:4, 2:5, 3:6, 4:7, 5:8, 6:9, 1:10)
+monthlyData = weekToMonth(weeklyData, year = 2008, wkIndex = 30, wkMethod = "epiMon")
+monthlyData = weekToMonth(weeklyData, datStart = "21-07-2008", wkMethod = "startDat")
+}
 \seealso{
 dateFromWeek
 }
