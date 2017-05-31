@@ -1,7 +1,7 @@
 
 
 #' Convert weekly data to monthly data
-#' @description This function converts weekly data to monthly data.
+#' @description Converts weekly data to monthly data.
 #'   The start week or date is needed along with the data. The start week can be
 #'   defined by ISO week or epi week.
 #' @param wkdata a numeric vector for weekly data to be converted.

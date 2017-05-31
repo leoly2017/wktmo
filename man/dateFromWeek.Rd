@@ -21,7 +21,7 @@ a vector of length 7, containing all the dates in the week, with the format
   of yyyy-mm-dd.
 }
 \description{
-This function returns the dates of a particular week.
+Returns the dates of a particular week.
   The week can be defined by ISO week or epi week.
 }
 \examples{

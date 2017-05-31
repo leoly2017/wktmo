@@ -32,7 +32,7 @@ a dataframe containing two column vectors: \code{yearMonth} and
   \code{value}.
 }
 \description{
-This function converts weekly data to monthly data.
+Converts weekly data to monthly data.
   The start week or date is needed along with the data. The start week can be
   defined by ISO week or epi week.
 }

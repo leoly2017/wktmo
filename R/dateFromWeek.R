@@ -1,6 +1,6 @@
 
 #' Return the dates of a particular week
-#' @description This function returns the dates of a particular week.
+#' @description Returns the dates of a particular week.
 #'   The week can be defined by ISO week or epi week.
 #' @param year a value for the year.
 #' @param wkIndex a value for the week index of the year.
