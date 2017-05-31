@@ -1,7 +1,8 @@
 Package: wktmo
 Type: Package
 Title: Converting Weekly Data to Monthly Data
-Version: 0.1.0
+Version: 0.9.0
+Date: 2017-05-31
 Authors@R: person("You", "Li", email = "You.Li2@ed.ac.uk",
   role = c("aut", "cre"))
 Description: This package converts weekly data to monthly data.
@@ -9,6 +10,5 @@ Description: This package converts weekly data to monthly data.
      epidemiology week (epi week) and calendar date. 
 Depends: R (>= 3.4.0)
 License: GPL-2
-Encoding: ASCII
 LazyData: true
 RoxygenNote: 6.0.1
