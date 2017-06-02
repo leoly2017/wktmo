@@ -37,9 +37,14 @@ Converts weekly data to monthly data.
   defined by ISO week or epi week.
 }
 \examples{
-weeklyData = c(1:4, 2:5, 3:6, 4:7, 5:8, 6:9, 1:10)
-monthlyData = weekToMonth(weeklyData, year = 2008, wkIndex = 30, wkMethod = "epiMon")
-monthlyData = weekToMonth(weeklyData, datStart = "21-07-2008", wkMethod = "startDat")
+# extract data
+data(weeklyFlu)
+# subset data of interest, e.g. to convert weekly influenza A cases in China
+weeklyData <- weeklyFlu$fluA[weeklyFlu$country == "China"]
+# convert weekly data to monthly data;
+# these two input methods below will return the same results.
+monthlyData <- weekToMonth(weeklyData, year = 2010, wkIndex = 1, wkMethod = "ISO")
+monthlyData <- weekToMonth(weeklyData, datStart = "04-01-2010", wkMethod = "startDat")
 }
 \seealso{
 dateFromWeek

@@ -1,0 +1,52 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# wktmo
+
+The goal of wktmo is to convert weekly data to monthly data. Three week formats are accepted: ISO week, epi week and calendar date.
+
+## Installation
+
+You can install wktmo from CRAN with:
+
+```{r gh-installation, eval = FALSE}
+install.packages("wktmo")
+```
+
+## Example
+
+This is a basic example which shows you how to convert real-world weekly data to monthly data.
+
+```{r example, echo=TRUE, results='asis'}
+library(wktmo)
+# extract data
+data(weeklyFlu)
+#'subset data of interest, e.g. to convert weekly influenza A cases in China
+weeklyData <- weeklyFlu$fluA[weeklyFlu$country == "China"]
+# convert weekly data to monthly data;
+# these two input methods below will return the same results.
+# input 1: the start year and wkIndex
+monthlyData <- weekToMonth(weeklyData, year = 2010, wkIndex = 1, wkMethod = "ISO")
+```
+```{r input 1, echo=FALSE}
+# display only first ten row of the results
+knitr::kable(monthlyData[1:10,])
+```
+```{r input 2, echo=TRUE}
+# input 2: the start date, same results
+monthlyData <- weekToMonth(weeklyData, datStart = "04-01-2010", wkMethod = "startDat")
+```
+```{r input 2r, echo=FALSE}
+knitr::kable(monthlyData[1:10,])
+```
