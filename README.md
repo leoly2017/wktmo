@@ -62,8 +62,8 @@ monthlyData <- weekToMonth(weeklyData, datStart = "04-01-2010", wkMethod = "star
 | 2010-09   |  37055|
 | 2010-10   |  19664|
 
-News
-----
+Updates
+-------
 
 ### wktmo 1.0.3
 
