@@ -3,7 +3,7 @@
 wktmo
 =====
 
-The goal of wktmo is to convert weekly data to monthly data.
+The goal of wktmo is to convert weekly data to monthly data. Three week formats are accepted: ISO week, epi week and calendar date.
 
 Installation
 ------------
@@ -17,7 +17,7 @@ install.packages("wktmo")
 Example
 -------
 
-This is a basic example which shows you how to convert real-world weekly data to monthly data.
+This is a basic example which shows you how to convert real-world weekly data to monthly data. `weeklyFlu` is a dataset containing weekly influenza cases, including influenza A, influenza B and influenza A+B, in 18 countries during 2010-2015; data are from FluNet, a global web-based tool for influenza virological surveillance. Refer to `help(weeklyFlu)` for more information.
 
 ``` r
 library(wktmo)
@@ -61,3 +61,32 @@ monthlyData <- weekToMonth(weeklyData, datStart = "04-01-2010", wkMethod = "star
 | 2010-08   |  22130|
 | 2010-09   |  37055|
 | 2010-10   |  19664|
+
+News
+----
+
+### wktmo 1.0.3
+
+#### Major Changes
+
+Add a real-world dataset, `weeklyFlu`.
+
+Replace examples with new examples using data in `weeklyFlu`.
+
+### wktmo 1.0.2
+
+#### Minor Changes
+
+Improvement on formmatting of examples.
+
+### wktmo 1.0.1
+
+First published on CRAN.
+
+#### Minor Changes
+
+Revisions of DESCRIPTION file.
+
+### wktmo 1.0.0
+
+First submission to CRAN.
