@@ -14,11 +14,15 @@ knitr::opts_chunk$set(
 
 # wktmo
 
-The goal of wktmo is to convert weekly data to monthly data. Three week formats are accepted: ISO week, epi week and calendar date.
+## Introduction
+
+Researchers working with weekly time series data may have the need to convert the data from weekly basis to monthly basis. However, it is challenging to allocate weeks to months since the dates of weeks are not fixed in different calendar years, especially when a week has dates in two months.
+
+The goal of wktmo is to convert weekly data to monthly data. For weeks that have dates in two months, the input value will be allocated evenly to the the dates. For example, if a week contains four days in January and three days in February, then four sevenths will go to January and three sevens will go to February. For weekly data, three types of week formats are accepted: ISO week, epi week and calendar date.
 
 ## Installation
 
-You can install wktmo from CRAN with:
+wktmo is built under R 3.4.0. In R console, you can install wktmo from CRAN with:
 
 ```{r gh-installation, eval = FALSE}
 install.packages("wktmo")
@@ -26,7 +30,7 @@ install.packages("wktmo")
 
 ## Example
 
-This is a basic example which shows you how to convert real-world weekly data to monthly data. `weeklyFlu` is a dataset containing weekly influenza cases, including influenza A, influenza B and influenza A+B, in 18 countries during 2010-2015; data are from FluNet, a global web-based tool for influenza virological surveillance. Refer to `help(weeklyFlu)` for more information.
+This is a basic example which shows you how to convert real-world weekly data to monthly data. `weeklyFlu` is a dataset containing weekly influenza cases, including influenza A, influenza B and influenza A+B, of 18 countries during 2010-2015; data are from FluNet, a global web-based tool for influenza virological surveillance. Refer to `help(weeklyFlu)` for more information.
 
 ```{r example, echo=TRUE, results='asis'}
 library(wktmo)
