@@ -13,16 +13,23 @@ The goal of wktmo is to convert weekly data to monthly data. For weeks that have
 Installation
 ------------
 
-wktmo is built under R 3.4.0. In R console, you can install wktmo from CRAN with:
+wktmo is built under R 3.4.0. For a stable version, you can install wktmo from CRAN with:
 
 ``` r
 install.packages("wktmo")
 ```
 
+For a development version, you can install wktmo from Github with:
+
+``` r
+install.packages("devtools")
+devtools::install_github("leoly2017/wktmo")
+```
+
 Example
 -------
 
-This is a basic example which shows you how to convert real-world weekly data to monthly data. `weeklyFlu` is a dataset containing weekly influenza cases, including influenza A, influenza B and influenza A+B, of 18 countries during 2010-2015; data are from FluNet, a global web-based tool for influenza virological surveillance. Refer to `help(weeklyFlu)` for more information.
+This is a basic example which shows you how to convert real-world weekly data to monthly data. `weeklyFlu` is a dataset containing weekly influenza cases, including influenza A, influenza B and influenza A+B, of 18 countries during 2010-2015; data are from FluNet, a global web-based tool for influenza virological surveillance. Use `help(weeklyFlu)` for more information.
 
 ``` r
 library(wktmo)
