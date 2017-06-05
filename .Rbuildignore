@@ -5,3 +5,4 @@
 ^Paper$
 ^paper.json
 ^LICENSE
+^\.travis\.yml$
