@@ -4,7 +4,7 @@
 \name{weeklyFlu}
 \alias{weeklyFlu}
 \title{Weekly influenza cases in 18 countries, 2010-2015}
-\format{a data frame 5616 rows and 10 variables.
+\format{a data frame containing 5616 rows and 10 variables.
 \describe{
   \item{country}{country: Argentina, Australia, Brazil, Chile, China, Egypt,
   Germany, Ghana, Indonesia, Iran, Japan, Mongolia, Niger, Peru, Singapore,
