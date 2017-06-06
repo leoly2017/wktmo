@@ -4,7 +4,7 @@
 #'   and influenza A+B, in 18 countries during 2010-2015. Data are from FluNet,
 #'   a global web-based tool for influenza virological surveillance.
 #'
-#' @format a data frame 5616 rows and 10 variables.
+#' @format a data frame containing 5616 rows and 10 variables.
 #' \describe{
 #'   \item{country}{country: Argentina, Australia, Brazil, Chile, China, Egypt,
 #'   Germany, Ghana, Indonesia, Iran, Japan, Mongolia, Niger, Peru, Singapore,
