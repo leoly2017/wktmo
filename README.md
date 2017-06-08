@@ -35,12 +35,13 @@ This is a basic example which shows you how to convert real-world weekly data to
 library(wktmo)
 # extract data
 data(weeklyFlu)
-#'subset data of interest, e.g. to convert weekly influenza A cases in China
+# subset data of interest, e.g. to convert weekly influenza A cases in China
 weeklyData <- weeklyFlu$fluA[weeklyFlu$country == "China"]
 # convert weekly data to monthly data;
 # these two input methods below will return the same results.
 # input 1: the start year and wkIndex
 monthlyData <- weekToMonth(weeklyData, year = 2010, wkIndex = 1, wkMethod = "ISO")
+# display only first 15 rows of the results
 ```
 
 | yearMonth |  value|
@@ -55,6 +56,11 @@ monthlyData <- weekToMonth(weeklyData, year = 2010, wkIndex = 1, wkMethod = "ISO
 | 2010-08   |  22130|
 | 2010-09   |  37055|
 | 2010-10   |  19664|
+| 2010-11   |   9041|
+| 2010-12   |  12398|
+| 2011-01   |  39581|
+| 2011-02   |  33775|
+| 2011-03   |   9409|
 
 ``` r
 # input 2: the start date, same results
@@ -73,9 +79,25 @@ monthlyData <- weekToMonth(weeklyData, datStart = "04-01-2010", wkMethod = "star
 | 2010-08   |  22130|
 | 2010-09   |  37055|
 | 2010-10   |  19664|
+| 2010-11   |   9041|
+| 2010-12   |  12398|
+| 2011-01   |  39581|
+| 2011-02   |  33775|
+| 2011-03   |   9409|
+
+Suggestions and reports of bugs
+-------------------------------
+
+Suggestions and reports of bugs are always welcome. If there are any, contact You Li (<You.Li2@ed.ac.uk>).
 
 Updates
 -------
+
+### wktmo 1.0.4
+
+#### Minor changes
+
+Small changes in README file.
 
 ### wktmo 1.0.3
 

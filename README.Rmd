@@ -42,26 +42,36 @@ This is a basic example which shows you how to convert real-world weekly data to
 library(wktmo)
 # extract data
 data(weeklyFlu)
-#'subset data of interest, e.g. to convert weekly influenza A cases in China
+# subset data of interest, e.g. to convert weekly influenza A cases in China
 weeklyData <- weeklyFlu$fluA[weeklyFlu$country == "China"]
 # convert weekly data to monthly data;
 # these two input methods below will return the same results.
 # input 1: the start year and wkIndex
 monthlyData <- weekToMonth(weeklyData, year = 2010, wkIndex = 1, wkMethod = "ISO")
+# display only first 15 rows of the results
 ```
 ```{r input 1, echo=FALSE}
-# display only first ten row of the results
-knitr::kable(monthlyData[1:10,])
+knitr::kable(monthlyData[1:15,])
 ```
 ```{r input 2, echo=TRUE}
 # input 2: the start date, same results
 monthlyData <- weekToMonth(weeklyData, datStart = "04-01-2010", wkMethod = "startDat")
 ```
 ```{r input 2r, echo=FALSE}
-knitr::kable(monthlyData[1:10,])
+knitr::kable(monthlyData[1:15,])
 ```
 
+## Suggestions and reports of bugs
+
+Suggestions and reports of bugs are always welcome. If there are any, contact You Li (You.Li2@ed.ac.uk). 
+
 ## Updates
+
+### wktmo 1.0.4
+
+#### Minor changes
+
+Small changes in README file. 
 
 ### wktmo 1.0.3
 
