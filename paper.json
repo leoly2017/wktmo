@@ -14,10 +14,10 @@
   "codeRepository": "https://github.com/leoly2017/wktmo",
   "datePublished": "",
   "dateModified": "",
-  "dateCreated": "2017-06-05",
+  "dateCreated": "2017-08-31",
   "description": "Converts weekly data to monthly data",
   "keywords": "time series, ISO week, Epi week, weekly data, monthly data",
   "license": "GPL-2",
   "title": "wktmo",
-  "version": "1.0.3"
+  "version": "1.0.5"
 }
