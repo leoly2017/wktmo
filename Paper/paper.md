@@ -4,7 +4,7 @@ authors:
 - affiliation: 1
   name: You Li
   orcid: 0000-0002-8506-8439
-date: "8 Jun 2017"
+date: "31 Aug 2017"
 bibliography: paper.bib
 tags:
 - example

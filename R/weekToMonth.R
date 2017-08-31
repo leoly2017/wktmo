@@ -60,7 +60,7 @@ weekToMonth <- function(wkdata, year = NULL, wkIndex = NULL, wkMethod = "ISO",
     stop()
   }
   len <- length(wkdata)
-  daydata <- rep(wkdata, each = 7)
+  daydata <- rep(wkdata/7, each = 7)
   if (is.null(datStart)) {
     if (wkMethod == "epiSat" | wkMethod == "epiSun" | wkMethod == "epiMon") {
       dateSeq <- NULL

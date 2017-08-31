@@ -1,8 +1,8 @@
 Package: wktmo
 Type: Package
 Title: Converting Weekly Data to Monthly Data
-Version: 1.0.4
-Date: 2017-06-08
+Version: 1.0.5
+Date: 2017-08-31
 Authors@R: person("You", "Li", email = "You.Li2@ed.ac.uk",
   role = c("aut", "cre"))
 Description: Converts weekly data to monthly data.

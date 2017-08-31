@@ -67,6 +67,12 @@ Suggestions and reports of bugs are always welcome. If there are any, contact Yo
 
 ## Updates
 
+### wktmo 1.0.5
+
+#### Major changes
+
+Fix a bug while converting weekly time series to monthly series.
+
 ### wktmo 1.0.4
 
 #### Minor changes
